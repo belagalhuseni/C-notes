@@ -1,0 +1,87 @@
+
+#include <iostream>
+using namespace std;
+int main() {
+   int a=10;
+   //declaration
+   int *ptr;
+   ptr =&a;
+  
+  cout<<"a= "<<endl;
+  cout<<"Address of a ="<<&a<<endl;
+   cout<<"Address of a through pointer ="<<ptr<<endl;
+   cout<<"*ptr ="<<*ptr<<endl;
+   
+    return 0;
+}
+
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+class math{
+    public:
+    int add(int a,int b){
+        return a+b;
+    }
+    double add(double a,double b) {
+        return a+b;
+    }
+};
+int main() {
+  math m;
+  cout<<m.add(5,10)<<endl;
+  cout<<m.add(2.5,3.7)<<endl;
+  return 0;
+}
+
+-------------------------------------------------------------------------
+
+#include <iostream>
+using namespace std;
+class shape { //abstract class
+public:
+virtual void area()=0;
+void display() {
+    cout<<"this is a shape."<<endl; }
+};
+class circle:public shape {
+    public:
+    void area() {
+        cout<<"area of a circle=22/7*r*r"<<endl; }
+    };
+    class square:public shape{
+        public:
+        void area() {
+            cout<<"Area of square=side*side"<<endl;
+        }
+    };
+    int main() {
+        circle c;
+        square s;
+        c.display();
+        c.area();
+        s.area();
+    }
+-----------------------------------------------------------------------
+
+#include <iostream>
+#include<fstream>
+using namespace std;
+ int main() {
+     
+     ofstream file("data.txt");
+     
+     file<<"Hello students! Welcome to file handling in C++.";
+     file.close();
+     ifstream readfile("data.txt");
+     string line;
+     getline(readfile,line);
+     cout<<"File content:"<<line<<endl;
+     
+     readfile.close();
+     return 0;
+ }
+------------------------------------------------------------------------
+
+    
