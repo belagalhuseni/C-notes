@@ -1,0 +1,77 @@
+
+#include <iostream>
+using namespace std;
+
+int main()
+    {
+int a;
+int b;
+cout <<"enter your reg no:huseni.";
+cin >>a;
+cout <<"Enter Your Frds Reg no.";
+cin>>b; 
+cout <<" your Reg no is:"<<a<<endl;
+cout <<"Yours Frds Reg no is:"<<b;
+return 0;
+}
+
+
+#include <iostream>
+using namespace std;
+int main() {
+int a=10;
+int b=20;
+cout<<"addition;"<<a+b<<endl;
+cout <<"substraction:"<<a-b<<endl;
+    return 0;
+}
+
+
+Online C++ compiler to run C++ program online
+#include <iostream>
+using namespace std;
+int main() {
+int a=10;
+float b=50.6 ;
+double c=10.8992635;
+char d='H' ;
+string e= "Huseni"; 
+cout <<"integer"<<a<<endl;
+cout<<"float"<<b<<endl;
+<<endl;
+    return 0;
+}
+
+#include <iostream>
+using namespace std;
+int main() {
+int a=10;
+int b=20;
+cout<<"greater;"<<(a>b)<<endl;
+cout <<"lesser:"<<(a<b)<<endl;
+    return 0;
+}
+
+
+
+#include <iostream>
+using namespace std;
+int main() {
+int age;
+float height;
+string name;
+double weight;
+char bloodgroup;
+cout<<"name:";
+cin>>name;
+cout<<"age:";
+cin>>age;
+cout<<"height(in feet):";
+cin>>height;
+cout<<"weight(in kgs):";
+cin>>weight;
+cout<<"blood group:";
+cin>>bloodgroup;
+}
+
+
